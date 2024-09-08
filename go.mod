@@ -2,8 +2,11 @@ module circular
 
 go 1.20
 
+// local
+//replace github.com/elementsproject/glightning => ../glightning
+
 // temporary forked
-replace github.com/elementsproject/glightning => github.com/impa10r/glightning v0.0.0-20240827150117-43d26f266f4d
+replace github.com/elementsproject/glightning => github.com/impa10r/glightning v0.0.0-20240908125131-efaaf78adc9f
 
 require (
 	github.com/dgraph-io/badger/v4 v4.3.0

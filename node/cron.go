@@ -93,12 +93,12 @@ func (n *Node) refreshPeers() error {
 		n.Peers[peer.Id] = peer
 
 		// since CLN 24.05 ListPeers omits channels, add them with ListPeerChannels
-		channels, err := n.lightning.ListPeerChannels(peer.Id)
+		res, err := n.lightning.ListPeerChannels(peer.Id)
 		if err != nil {
 			return err
 		}
 
-		n.Peers[peer.Id].Channels = channels
+		n.Peers[peer.Id].Channels = res.Channels
 	}
 	return nil
 }
