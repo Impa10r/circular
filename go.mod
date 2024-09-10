@@ -2,15 +2,9 @@ module circular
 
 go 1.20
 
-// local
-//replace github.com/elementsproject/glightning => ../glightning
-
-// temporary forked
-replace github.com/elementsproject/glightning => github.com/impa10r/glightning v0.0.0-20240908125131-efaaf78adc9f
-
 require (
 	github.com/dgraph-io/badger/v4 v4.3.0
-	github.com/elementsproject/glightning v0.0.0-20240802020216-b4e19b004ca4
+	github.com/elementsproject/glightning v0.0.0-20240910115322-5c07410a8494
 	github.com/gammazero/deque v0.2.1
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/stretchr/testify v1.9.0
